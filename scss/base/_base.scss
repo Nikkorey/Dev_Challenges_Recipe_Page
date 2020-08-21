@@ -25,3 +25,17 @@ li {
   margin: 0 auto;
   padding: 2rem 1rem;
 }
+
+.main {
+  @media #{$brk-point-1024} {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.section__hero {
+  @media #{$brk-point-1024} {
+    grid-column: 1 / 2;
+    grid-row: 1 /2;
+  }
+}
