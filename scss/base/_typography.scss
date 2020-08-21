@@ -1,0 +1,17 @@
+/* Typography */
+
+.heading {
+  &__sec {
+    font-size: 1.8rem;
+    font-family: "Playfair Display", serif;
+    font-weight: bold;
+  }
+
+  &__ter {
+    font-size: 1.6rem;
+    font-family: "Playfair Display", serif;
+    font-weight: normal;
+    font-style: italic;
+    margin: 1rem 0;
+  }
+}

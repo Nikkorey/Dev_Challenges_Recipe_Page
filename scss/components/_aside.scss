@@ -1,0 +1,41 @@
+/* Aside Section */
+
+.aside {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+
+  &__icons {
+    font-size: 1.5rem;
+  }
+
+  &__hero {
+    display: flex;
+    align-items: center;
+  }
+
+  &__paragraph {
+    font-weight: bold;
+    font-size: 0.8rem;
+    color: $light-gray-c;
+  }
+
+  &__paragraphBig {
+    font-weight: 500;
+    font-size: 1rem;
+    color: $sec-black-c;
+  }
+
+  //   &__hero {
+  //     display: grid;
+  //     grid-template-columns: 100px 100px;
+  //   }
+}
+
+.details__hero {
+  margin-left: 0.5rem;
+}
+
+.orange {
+  color: $orange-c;
+}

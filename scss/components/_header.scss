@@ -1,0 +1,30 @@
+/* Header Section */
+
+.header {
+  &__heading {
+    font-size: 2.4rem;
+    font-family: "Playfair Display", serif;
+    margin-bottom: 1rem;
+  }
+
+  &__intro {
+    display: flex;
+  }
+
+  &__svg {
+    width: 100px;
+  }
+
+  span {
+    font-size: 1.2rem;
+    font-style: italic;
+    display: inline-block;
+    margin-left: 1rem;
+  }
+
+  &__image {
+    width: 100%;
+    border-radius: 1.5rem;
+    margin: 2rem 0;
+  }
+}
