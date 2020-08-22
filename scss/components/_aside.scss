@@ -4,34 +4,57 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 1rem;
+  text-transform: uppercase;
 
   @media #{$brk-point-1024} {
+    justify-self: flex-end;
     grid-column: 2 / 3;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    height: 400px;
-    border: solid;
+    align-items: flex-start;
+    justify-content: center;
+    height: 370px;
+    width: 215px;
+    box-shadow: 2px 2px 2px 1px #cccccc;
+    border-radius: 1rem;
   }
 
   &__icons {
     font-size: 1.5rem;
+
+    @media #{$brk-point-1024} {
+      font-size: 3rem;
+    }
   }
 
   &__hero {
     display: flex;
     align-items: center;
 
+    @media #{$brk-point-1024} {
+      margin: 1rem 0;
+      margin-left: 4.4rem;
+    }
+  }
+
   &__paragraph {
     font-weight: bold;
     font-size: 0.8rem;
     color: $light-gray-c;
+
+    @media #{$brk-point-1024} {
+      font-size: 1rem;
+    }
   }
 
   &__paragraphBig {
     font-weight: 500;
     font-size: 1rem;
     color: $sec-black-c;
+
+    @media #{$brk-point-1024} {
+      font-size: 1.4rem;
+    }
   }
 
   &__two {
@@ -47,17 +70,17 @@
     grid-row: 2 / 4;
     grid-column: 3 / -1;
   }
-
-  //   &__hero {
-  //     display: grid;
-  //     grid-template-columns: 100px 100px;
-  //   }
 }
 
 .details__hero {
   margin-left: 0.5rem;
+
+  @media #{$brk-point-1024} {
+    margin-left: 1rem;
+  }
 }
 
 .orange {
   color: $orange-c;
+  text-transform: lowercase;
 }

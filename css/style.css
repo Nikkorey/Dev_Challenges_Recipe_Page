@@ -32,8 +32,8 @@ li {
   .main {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
+    -ms-grid-columns: 600px 1fr;
+        grid-template-columns: 600px 1fr;
   }
 }
 
@@ -55,12 +55,19 @@ li {
   font-weight: bold;
 }
 
+@media (min-width: 1024px) {
+  .heading__sec {
+    font-size: 2.4rem;
+    margin-bottom: 3rem;
+  }
+}
+
 .heading__ter {
   font-size: 1.6rem;
   font-family: "Playfair Display", serif;
   font-weight: normal;
   font-style: italic;
-  margin: 1rem 0;
+  margin: 2rem 0;
 }
 
 /* Header Section */
@@ -70,14 +77,30 @@ li {
   margin-bottom: 1rem;
 }
 
+@media (min-width: 1024px) {
+  .header__heading {
+    font-size: 4.8rem;
+    margin-bottom: 2.5rem;
+  }
+}
+
 .header__intro {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .header__svg {
   width: 100px;
+}
+
+@media (min-width: 1024px) {
+  .header__svg {
+    width: 10px;
+  }
 }
 
 .header span {
@@ -87,10 +110,23 @@ li {
   margin-left: 1rem;
 }
 
+@media (min-width: 1024px) {
+  .header span {
+    font-size: 1.4rem;
+    max-width: 600px;
+  }
+}
+
 .header__image {
   width: 100%;
   border-radius: 1.5rem;
   margin: 2rem 0;
+}
+
+@media (min-width: 1024px) {
+  .header__image {
+    margin: 3rem 0;
+  }
 }
 
 /* Aside Section */
@@ -100,10 +136,12 @@ li {
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
   grid-gap: 1rem;
+  text-transform: uppercase;
 }
 
 @media (min-width: 1024px) {
   .aside {
+    justify-self: flex-end;
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
     grid-column: 2 / 3;
@@ -114,16 +152,28 @@ li {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    height: 400px;
-    border: solid;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 370px;
+    width: 215px;
+    -webkit-box-shadow: 2px 2px 2px 1px #cccccc;
+            box-shadow: 2px 2px 2px 1px #cccccc;
+    border-radius: 1rem;
   }
 }
 
 .aside__icons {
   font-size: 1.5rem;
+}
+
+@media (min-width: 1024px) {
+  .aside__icons {
+    font-size: 3rem;
+  }
 }
 
 .aside__hero {
@@ -137,7 +187,8 @@ li {
 
 @media (min-width: 1024px) {
   .aside__hero {
-    border: solid;
+    margin: 1rem 0;
+    margin-left: 4.4rem;
   }
 }
 
@@ -147,10 +198,22 @@ li {
   color: #bdbdbd;
 }
 
+@media (min-width: 1024px) {
+  .aside__paragraph {
+    font-size: 1rem;
+  }
+}
+
 .aside__paragraphBig {
   font-weight: 500;
   font-size: 1rem;
   color: #333;
+}
+
+@media (min-width: 1024px) {
+  .aside__paragraphBig {
+    font-size: 1.4rem;
+  }
 }
 
 .aside__two {
@@ -182,13 +245,26 @@ li {
   margin-left: 0.5rem;
 }
 
+@media (min-width: 1024px) {
+  .details__hero {
+    margin-left: 1rem;
+  }
+}
+
 .orange {
   color: #f2994a;
+  text-transform: lowercase;
 }
 
 /* Ingredients Section */
 .section__ingredients {
   margin: 2rem 0;
+}
+
+@media (min-width: 1024px) {
+  .section__ingredients {
+    font-size: 1.6rem;
+  }
 }
 
 .cheesecake {
@@ -208,25 +284,23 @@ li {
 input {
   padding: 10rem;
   display: inline-block;
+  cursor: pointer;
+  width: 2.1rem;
+  height: 2.1rem;
 }
 
 label {
   display: inline-block;
-  margin-left: 1rem;
+  margin-left: 1.7rem;
   -ms-flex-item-align: end;
       align-self: flex-end;
+  width: 540px;
 }
 
 .section__instructions {
   font-size: 1.6rem;
   font-style: normal;
   margin-top: 2rem;
-}
-
-.linkSite {
-  font-size: 1.2rem;
-  color: #bdbdbd;
-  font-style: italic;
 }
 
 .procedure__list {
@@ -236,7 +310,7 @@ label {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  margin: 2rem 0;
+  margin: 3rem 0;
 }
 
 .procedure__list h2 {
@@ -246,12 +320,37 @@ label {
   border-radius: 1rem;
 }
 
+.procedure__list p {
+  margin-left: 1.5rem;
+}
+
 .procedure__list span {
   font-weight: bold;
 }
 
+.linkSite {
+  font-size: 1.2rem;
+  color: #bdbdbd;
+  font-style: italic;
+}
+
+.linkSite a {
+  color: #bdbdbd;
+}
+
+@media (min-width: 1024px) {
+  .linkSite {
+    font-size: 1.6rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 4rem;
+  }
+}
+
 /* Footer */
 .footer {
+  padding: 10rem 0 1rem 0;
   text-align: center;
 }
 

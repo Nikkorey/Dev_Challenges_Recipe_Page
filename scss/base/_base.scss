@@ -29,7 +29,7 @@ li {
 .main {
   @media #{$brk-point-1024} {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 600px 1fr;
   }
 }
 

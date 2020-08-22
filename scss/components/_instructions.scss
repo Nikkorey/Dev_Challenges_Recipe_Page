@@ -4,16 +4,10 @@
   margin-top: 2rem;
 }
 
-.linkSite {
-  font-size: 1.2rem;
-  color: $light-gray-c;
-  font-style: italic;
-}
-
 .procedure__list {
   display: flex;
   align-items: flex-start;
-  margin: 2rem 0;
+  margin: 3rem 0;
 
   h2 {
     background-color: $orange-c;
@@ -21,7 +15,26 @@
     color: #fff;
     border-radius: 1rem;
   }
+
+  p {
+    margin-left: 1.5rem;
+  }
   span {
     font-weight: bold;
+  }
+}
+
+.linkSite {
+  font-size: 1.2rem;
+  color: $light-gray-c;
+  font-style: italic;
+  a {
+    color: $light-gray-c;
+  }
+
+  @media #{$brk-point-1024} {
+    font-size: 1.6rem;
+    display: flex;
+    margin-top: 4rem;
   }
 }
