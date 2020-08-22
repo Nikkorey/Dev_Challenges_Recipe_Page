@@ -1,4 +1,4 @@
-# Dev_Challenges_Interior_Consultant
+# Dev_Challenges_Recipe_Page
 
 # By devchallenges.io
 # Devchallenges is designed for everyone who wants to be a software developer, it consists of different projects or you might call it challenges.
